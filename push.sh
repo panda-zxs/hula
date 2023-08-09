@@ -17,5 +17,5 @@ git add .
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
 
-git push
+git push origin master
 done
