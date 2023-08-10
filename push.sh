@@ -1,11 +1,11 @@
 #! /bin/bash
-git checkout -- .
-git config user.email "bot@example.com"
-git config user.name "a bot"
-git config pull.rebase false
 git remote add bot https://github.com/panda-zxs/hula.git
-git fetch
-git pull origin bot
+git config user.email "45396622zxs@gmail.com"
+git config user.name "zxs"
+git config pull.rebase false
+git checkout -- .
+git fetch bot
+git pull bot master
 cd $(dirname $0)
 
 # 执行次数
@@ -21,5 +21,5 @@ git add .
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
 
-git push origin bot master
+git push bot master
 done
