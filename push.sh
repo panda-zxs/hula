@@ -22,5 +22,11 @@ git add .
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
 
-git push origin master
+git push origin master << eof
+
+panda-zxs
+
+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
+
+eof
 done
