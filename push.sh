@@ -5,7 +5,7 @@ git config user.name "a bot"
 git config pull.rebase false
 git remote add bot https://github.com/panda-zxs/hula.git
 git fetch
-git pull origin master
+git pull origin bot
 cd $(dirname $0)
 
 # 执行次数
@@ -21,5 +21,5 @@ git add .
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
 
-git push origin master
+git push origin bot master
 done
