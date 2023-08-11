@@ -12,6 +12,7 @@ function huisu(s, index, total, data, len) {
   }
 }
 
+
 let data = ['foo', 'bar', 'then']
 huisu('', 0, data.length, data, 0)
 
