@@ -1,6 +1,6 @@
 #! /bin/bash
 git remote remove origin
-git remote add origin https://panda-zxs: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@github.com/panda-zxs/hula.git
+git remote add origin https://panda-zxs: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@github.com/panda-zxs/hula.git
 git config user.email "45396622zxs@gmail.com"
 git config user.name "panda-zxs"
 git config pull.rebase false
@@ -22,11 +22,5 @@ git add .
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
 
-git push origin master << eof
-
-panda-zxs
-
-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
-
-eof
+git push origin master
 done
