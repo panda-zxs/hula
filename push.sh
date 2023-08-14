@@ -17,7 +17,7 @@ echo $count
 for((i=0;i<$count;i++))
 do
 node ./commit/code.js
-git add .
+git add . --all
 
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
