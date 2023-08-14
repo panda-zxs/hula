@@ -20,4 +20,4 @@ jobs:
         node-version: 14 # node版本
     - name: push
       # 步骤执行指令
-      run: ./push.sh
+      run: sh ./push.sh
