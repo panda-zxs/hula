@@ -1,7 +1,11 @@
-name: Build app and deploy to Tencent
+name: Build app and deploy
 on:
 #触发事件，当收到推送的时候执行
- push
+ push:
+   branches: 
+     - master
+ schedule:
+   - cron: '0 2 * * 0'
   
 jobs:
   # 任务ID
