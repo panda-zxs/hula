@@ -1,12 +1,12 @@
 #! /bin/bash
-git remote remove origin
-git remote add origin git@github.com/panda-zxs/hula.git
+git remote remove bot
+git remote add bot git@github.com:panda-zxs/hula.git
 git config user.email "45396622zxs@gmail.com"
 git config user.name "panda-zxs"
 git config pull.rebase false
 git checkout -- .
-git fetch origin
-git pull origin master
+git fetch bot
+git pull bot master
 cd $(dirname $0)
 
 # 执行次数
@@ -22,5 +22,5 @@ git add . --all
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
 
-git push origin master
+git push bot master
 done
