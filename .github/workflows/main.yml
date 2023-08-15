@@ -1,0 +1,27 @@
+name: Build app and deploy
+on:
+#触发事件，当收到推送的时候执行
+ push:
+   branches: 
+     - master
+ schedule:
+   - cron: '0 2 * * 0'
+  
+jobs:
+  # 任务ID
+  build:
+    # 运行环境
+    runs-on: ubuntu-latest
+    # 步骤
+    steps:
+    - name: Checkout Code
+    # 使用别人的action
+      uses: actions/checkout@v2
+    # 步骤名称
+    - name: use node
+      uses: actions/setup-node@v2.5.1
+      with:
+        node-version: 14 # node版本
+    - name: push
+      # 步骤执行指令
+      run: bash ./push.sh
