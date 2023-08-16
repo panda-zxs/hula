@@ -22,5 +22,5 @@ git add . --all
 msg=$(node ./commit/msg.js)
 git commit -m "$msg"
 
-git push bot master
 done
+git push bot master
