@@ -3,7 +3,7 @@ git remote remove bot
 git remote add bot git@github.com:panda-zxs/hula.git
 git config user.email "45396622zxs@gmail.com"
 git config user.name "panda-zxs"
-git config pull.rebase false
+git config pull.rebase true
 git checkout -- .
 git fetch bot
 git pull bot master
